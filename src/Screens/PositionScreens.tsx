@@ -1,13 +1,25 @@
 import React from "react";
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
 
 export const PositionScreen = () => {
     return (
         <View style={styles.container}>
-            <View style={styles.caja1} />
-            <View style={styles.caja2} />
-            <View style={styles.caja3} />
+            <View style={styles.caja1} >
+                <Text>
+                    Caja 1
+                </Text>
+            </View>
+            <View style={styles.caja2} >
+                <Text>
+                    Caja 2
+                </Text>
+            </View>
+            <View style={styles.caja3} >
+                <Text>
+                    Caja 3
+                </Text>
+            </View>
 
         </View>
     )
@@ -15,10 +27,15 @@ export const PositionScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#61E8A9"
+        backgroundColor: "#61E8A9",
+        //flexDirection: 'row'
+       //justifyContent:'space-around'
+       //alignItems:'center'
+       //alignSelf:'stretch' 
+       flexWrap:'wrap'  //para que se puedan colocar varias cajas en una fila
     },
     caja1: {
-        flex: 1,
+        //flex: 2,
         //width: 100,
         //height: 100,
         //backgroundColor: "#FF7F6B",
@@ -30,11 +47,11 @@ const styles = StyleSheet.create({
         //right: 0,
     },
     caja2: {
-        flex:2,
+        //flex:2,
         fontSize: 30,
         //width: 100,
         //height: 100,
-        backgroundColor: "#DDFF85",
+        //backgroundColor: "#DDFF85",
         borderWidth: 2,
         borderColor: "white",
         //position: "absolute",
@@ -43,14 +60,16 @@ const styles = StyleSheet.create({
         //right:0,
     },
     caja3: {
-        width: 100,
-        height: 100,
-        backgroundColor: "#95B34B",
-        borderWidth: 10,
+        //flex: 2,
+        fontSize: 30,
+        //width: 100,
+        //height: 100,
+        //backgroundColor: "#95B34B",
+        borderWidth: 2,
         borderColor: "white",
-        position: "absolute",
+        //position: "absolute",
         // top: 0,
         // right: 0,
-        ...StyleSheet.absoluteFillObject
+        //...StyleSheet.absoluteFillObject
     }
 })
