@@ -1,5 +1,5 @@
 {
-  "name": "practica",
+  "name": "rdasd",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -46,5 +46,17 @@
       "json",
       "node"
     ]
-  }
+  },
+  "description": "Practica Basica de los componentes de React Native",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusRodrigoChanPuch/AplicacionReactNAtive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesusRodrigoChanPuch/AplicacionReactNAtive/issues"
+  },
+  "homepage": "https://github.com/JesusRodrigoChanPuch/AplicacionReactNAtive#readme"
 }

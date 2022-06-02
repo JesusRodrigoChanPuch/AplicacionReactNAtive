@@ -11,6 +11,11 @@ import {TimerScreen} from './src/Screens/TimerScreen';
 import StrackHome from './src/stracks/StrackHome';
 import AlignItemsLayout from './src/Screens/AlignItemsExample';
 import AlignContentLayout from './src/Screens/AlignContentExample';
+import FlexWrapLayout from './src/Screens/FlexWrapExample';
+import Box from './src/Screens/BoxExample';
+import BoxExample from './src/Screens/BoxExample';
+import WidthHeightBasics from './src/Screens/WidthAndHeightExample';
+import PositionLayout from './src/Screens/PositionExample';
 
 const App = () => {
   return (
@@ -22,8 +27,11 @@ const App = () => {
     //<DirectionLayout/>
     //<JustifyContentBasics/>
     //<AlignItemsLayout/>
-    <AlignContentLayout/>
-
+    //<AlignContentLayout/>
+    //<FlexWrapLayout/>
+    //<BoxExample/>
+    //<WidthHeightBasics/>
+    <PositionLayout/>
   );
 };
 
