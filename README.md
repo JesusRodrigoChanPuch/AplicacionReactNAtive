@@ -5,6 +5,11 @@ INSTRUCCIONES
 
 Despues de descargar el proyecto ejecutar el siguente comando npm install 
 
+npm install --save 
+
+npm init
+
+
 
 Comoando Basicos Git
 
