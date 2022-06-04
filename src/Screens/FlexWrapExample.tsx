@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 
-const FlexWrapLayout = () => {
+const FlexWrapLayout = ({ navigation }) => {
     const [flexWrap, setFlexWrap] = useState("wrap");
 
     return (

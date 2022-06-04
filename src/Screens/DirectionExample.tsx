@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 
-const DirectionLayout = () => {
+const DirectionLayout = ({ navigation }) => {
     const [direction, setDirection] = useState("ltr");
 
     return (

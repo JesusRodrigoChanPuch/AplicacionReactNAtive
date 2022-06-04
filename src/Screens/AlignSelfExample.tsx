@@ -1,54 +1,28 @@
 import React, { useState } from "react";
-import {
-    View,
-    SafeAreaView,
-    TouchableOpacity,
-    Text,
-    StyleSheet,
-} from "react-native";
+import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 
-const PositionLayout = ({ navigation }) => {
-    const [position, setPosition] = useState("relative");
+const AlignSelfLayout = () => {
+    const [alignSelf, setAlignSelf] = useState("stretch");
 
     return (
         <PreviewLayout
-            label="position"
-            selectedValue={position}
-            values={["relative", "absolute"]}
-            setSelectedValue={setPosition}
-        >
+            label="alignSelf"
+            selectedValue={alignSelf}
+            values={["stretch", "flex-start", "flex-end", "center", "baseline"]}
+            setSelectedValue={setAlignSelf}>
             <View
-                style={[
-                    styles.box,
-                    {
-                        top: 25,
-                        left: 25,
-                        position,
-                        backgroundColor: "powderblue",
-                    },
-                ]}
+                style={[styles.box, {
+                    alignSelf,
+                    width: "auto",
+                    minWidth: 50,
+                    backgroundColor: "powderblue",
+                }]}
             />
             <View
-                style={[
-                    styles.box,
-                    {
-                        top: 50,
-                        left: 50,
-                        position,
-                        backgroundColor: "skyblue",
-                    },
-                ]}
+                style={[styles.box, { backgroundColor: "skyblue" }]}
             />
             <View
-                style={[
-                    styles.box,
-                    {
-                        top: 75,
-                        left: 75,
-                        position,
-                        backgroundColor: "steelblue",
-                    },
-                ]}
+                style={[styles.box, { backgroundColor: "steelblue" }]}
             />
         </PreviewLayout>
     );
@@ -85,7 +59,9 @@ const PreviewLayout = ({
                 </TouchableOpacity>
             ))}
         </View>
-        <View style={styles.container}>{children}</View>
+        <View style={styles.container}>
+            {children}
+        </View>
     </View>
 );
 
@@ -134,4 +110,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default PositionLayout;
+export default AlignSelfLayout;

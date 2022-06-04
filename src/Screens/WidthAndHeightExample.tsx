@@ -7,7 +7,7 @@ import {
     StyleSheet,
 } from "react-native";
 
-const WidthHeightBasics = () => {
+const WidthHeightBasics = ({ navigation }) => {
     const [widthType, setWidthType] = useState("auto");
     const [heightType, setHeightType] = useState("auto");
 

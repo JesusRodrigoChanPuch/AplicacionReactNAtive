@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, ScrollView } from 'react-native';
 
-export const DimensionesScreen = () => {
+export const DimensionesScreen = ({ navigation }) => {
     return(
         <ScrollView >
             <View style={styles.container}>

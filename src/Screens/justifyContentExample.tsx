@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 
-const JustifyContentBasics = () => {
+const JustifyContentBasics = ({ navigation }) => {
     const [justifyContent, setJustifyContent] = useState("flex-start");
 
     return (

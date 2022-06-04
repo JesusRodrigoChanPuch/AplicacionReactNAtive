@@ -6,7 +6,7 @@ import {
     StyleSheet,
 } from "react-native";
 
-const BoxExample = () => {
+const App = () => {
     const [powderblue, setPowderblue] = useState({
         flexGrow: 0,
         flexShrink: 1,
@@ -197,4 +197,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default BoxExample;
+export default App;

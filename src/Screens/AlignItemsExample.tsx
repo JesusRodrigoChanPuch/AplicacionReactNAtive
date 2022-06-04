@@ -6,7 +6,7 @@ import {
     StyleSheet,
 } from "react-native";
 
-const AlignItemsLayout = () => {
+const AlignItemsLayout = ({ navigation }) => {
     const [alignItems, setAlignItems] = useState("stretch");
 
     return (

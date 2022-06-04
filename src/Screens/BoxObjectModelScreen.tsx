@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-export const BoxObjectModelScreen =()=> {
+import { View, Text, StyleSheet,Button } from 'react-native';
+export const BoxObjectModelScreen =({navigation})=> {
     return(
         <View style={styles.constainer}>
             <Text style={styles.title}>

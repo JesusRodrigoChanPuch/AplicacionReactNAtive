@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { View, TouchableOpacity, Text, StyleSheet,Button } from "react-native";
 
-const AlignContentLayout = () => {
+const AlignContentLayout = ({ navigation }) => {
     const [alignContent, setAlignContent] = useState("flex-start");
 
     return (
@@ -38,6 +38,7 @@ const AlignContentLayout = () => {
             <View
                 style={[styles.box, { backgroundColor: "purple" }]}
             />
+            <Button title="Go back" onPress={() => navigation.goBack()} />
         </PreviewLayout>
     );
 };

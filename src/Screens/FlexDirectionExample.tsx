@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-const FlexDirectionBasics = () => {
+const FlexDirectionBasics = ({ navigation }) => {
     const [flexDirection, setflexDirection] = useState("column");
 
     return (

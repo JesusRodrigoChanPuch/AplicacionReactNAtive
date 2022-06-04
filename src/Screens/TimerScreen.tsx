@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, Button, TouchableOpacity, StyleSheet } from 'react-native';
-import { } from 'react-native';
 import { Bottons } from '../conponents/Bottons';
 
-export const TimerScreen = ({ navigation }) => {
+export const TimerScreen = ({navigation}) => {
   //? Para crear un useState(una variable que puede cambiar)
   const [contador, setContador] = useState(10);
 
@@ -20,9 +19,7 @@ export const TimerScreen = ({ navigation }) => {
         title='+1'
         onPress={() => setContador(contador + 1)} position='bl'
       />
-      <Bottons
-        title='V'
-        onPress={() => navigation.push('Profile')} position='bl' />
+      <Button title='Go Back' onPress={()=> {navigation.navigate('Home')}}  />
     </View>
   );
 };
